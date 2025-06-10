@@ -15,7 +15,7 @@ const Hero = () => {
           height={500}
           priority
         />
-        <h3 className="text-xl lg:text-2xl font-semibold">
+        <h3 className="text-xl lg:text-2xl font-semibold text-center">
           Transforming ideas into tangible impact.{" "}
           <span className="text-primary">See how I do it.</span>
         </h3>
