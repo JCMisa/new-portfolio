@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { EasterEgg } from "@/components/custom/EasterEgg";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -29,7 +28,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <EasterEgg />
         </ThemeProvider>
       </body>
     </html>

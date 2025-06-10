@@ -65,28 +65,28 @@ const Icons = {
 const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "#", icon: PencilIcon, label: "Projects" },
+    { href: "/projects", icon: PencilIcon, label: "Projects" },
   ],
   contact: {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/JCMisa",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "#",
+        url: "https://www.linkedin.com/in/john-carlo-misa-80a1b5208/",
         icon: Icons.linkedin,
       },
       X: {
         name: "X",
-        url: "#",
+        url: "https://x.com/jcmisa_dev",
         icon: Icons.x,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=johncarlomisa399@gmail.com",
         icon: Icons.email,
       },
     },
@@ -107,7 +107,7 @@ export function DockNavbar() {
                     aria-label={item.label}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
+                      "size-12 rounded-full"
                     )}
                   >
                     <item.icon className="size-4" />
@@ -126,10 +126,12 @@ export function DockNavbar() {
                 <TooltipTrigger asChild>
                   <Link
                     href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={social.name}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 rounded-full",
+                      "size-12 rounded-full"
                     )}
                   >
                     <social.icon className="size-4" />
