@@ -66,7 +66,7 @@ export const EasterEgg = () => {
       const hideTimer = setTimeout(() => {
         setIsVisible(false);
         scheduleNextAppearance();
-      }, 5000);
+      }, 5000); // adjust this to hide egg faster
 
       return () => clearTimeout(hideTimer);
     }
