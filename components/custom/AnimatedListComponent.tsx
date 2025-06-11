@@ -2,50 +2,84 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/magicui/animated-list";
+import {
+  BrainIcon,
+  LightbulbIcon,
+  MessageSquareIcon,
+  RefreshCwIcon,
+  UsersIcon,
+} from "lucide-react";
 
 interface Item {
   name: string;
   description: string;
-  icon: string;
+  icon: React.ElementType;
   color: string;
-  time: string;
+  tagline: string;
 }
 
-let notifications = [
+let softSkills = [
   {
-    name: "Payment received",
-    description: "Magic UI",
-    time: "15m ago",
-
-    icon: "💸",
-    color: "#00C9A7",
+    name: "Effective Communication",
+    description:
+      "Conveying complex ideas clearly and listening actively to foster understanding.",
+    icon: MessageSquareIcon,
+    color: "#4CAF50",
+    context:
+      "Ensuring seamless team alignment and client satisfaction through transparent dialogue.",
+    tagline: "Clarity",
   },
   {
-    name: "User signed up",
-    description: "Magic UI",
-    time: "10m ago",
-    icon: "👤",
-    color: "#FFB800",
+    name: "Collaborative Leadership",
+    description:
+      "Guiding teams with empathy and empowering individuals to achieve collective goals.",
+    icon: UsersIcon,
+    color: "#2196F3",
+    context:
+      "Cultivating a cohesive environment where diverse talents converge to deliver exceptional outcomes.",
+    tagline: "Synergy",
   },
   {
-    name: "New message",
-    description: "Magic UI",
-    time: "5m ago",
-    icon: "💬",
-    color: "#FF3D71",
+    name: "Adaptability & Resilience",
+    description:
+      "Thriving in dynamic environments and overcoming obstacles with a flexible mindset.",
+    icon: RefreshCwIcon,
+    color: "#FFC107",
+    context:
+      "Navigating unforeseen challenges and pivots to maintain project momentum and quality.",
+    tagline: "Agility",
   },
   {
-    name: "New event",
-    description: "Magic UI",
-    time: "2m ago",
-    icon: "🗞️",
-    color: "#1E86FF",
+    name: "Strategic Problem Solving",
+    description:
+      "Approaching challenges systematically to identify root causes and implement innovative solutions.",
+    icon: LightbulbIcon,
+    color: "#9C27B0",
+    context:
+      "Transforming complex issues into actionable strategies that drive efficiency and growth.",
+    tagline: "Solutions",
+  },
+  {
+    name: "Critical Thinking",
+    description:
+      "Analyzing information objectively and making informed decisions based on evidence.",
+    icon: BrainIcon,
+    color: "#E91E63",
+    context:
+      "Synthesizing diverse data points to inform robust solutions and minimize risks.",
+    tagline: "Insight",
   },
 ];
 
-notifications = Array.from({ length: 10 }, () => notifications).flat();
+softSkills = Array.from({ length: 10 }, () => softSkills).flat();
 
-const Notification = ({ name, description, icon, color, time }: Item) => {
+const Notification = ({
+  name,
+  description,
+  icon: Icon,
+  color,
+  tagline,
+}: Item) => {
   return (
     <figure
       className={cn(
@@ -60,18 +94,18 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
     >
       <div className="flex flex-row items-center gap-3">
         <div
-          className="flex size-10 items-center justify-center rounded-2xl"
+          className="flex size-10 items-center justify-center p-2 px-3 rounded-full"
           style={{
             backgroundColor: color,
           }}
         >
-          <span className="text-lg">{icon}</span>
+          <Icon className="size-5 text-white" />
         </div>
         <div className="flex flex-col overflow-hidden">
           <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
             <span className="text-sm sm:text-lg">{name}</span>
             <span className="mx-1">·</span>
-            <span className="text-xs text-gray-500">{time}</span>
+            <span className="text-xs text-gray-500">{tagline}</span>
           </figcaption>
           <p className="text-sm font-normal dark:text-white/60">
             {description}
@@ -86,12 +120,12 @@ export function AnimatedListComponent({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "relative flex h-[500px] w-full flex-col overflow-hidden p-2",
+        "relative flex h-[500px] w-full flex-col overflow-auto no-scrollbar p-2",
         className
       )}
     >
       <AnimatedList>
-        {notifications.map((item, idx) => (
+        {softSkills.map((item, idx) => (
           <Notification {...item} key={idx} />
         ))}
       </AnimatedList>

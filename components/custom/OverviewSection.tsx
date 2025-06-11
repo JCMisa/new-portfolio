@@ -1,43 +1,46 @@
-import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
-import { BellIcon, Share2Icon } from "lucide-react";
+import {
+  ClockIcon,
+  HandshakeIcon,
+  Laptop2Icon,
+  PuzzleIcon,
+} from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { AnimatedBeamMultipleOutputs } from "./AnimatedBeamMultipleOutputs";
 import { AnimatedListComponent } from "./AnimatedListComponent";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Marquee } from "../magicui/marquee";
-import { Calendar } from "../ui/calendar";
 import { TypingAnimation } from "../magicui/typing-animation";
 import { Globe } from "../magicui/globe";
 
-const files = [
+const approaches = [
   {
-    name: "bitcoin.pdf",
-    body: "Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto.",
+    name: "User-Centered Design",
+    body: "I prioritize understanding user needs and behaviors to craft intuitive, engaging experiences that genuinely solve problems.",
   },
   {
-    name: "finances.xlsx",
-    body: "A spreadsheet or worksheet is a file made of rows and columns that help sort data, arrange data easily, and calculate numerical data.",
+    name: "Iterative Development",
+    body: "My process involves continuous cycles of feedback, refinement, and testing, ensuring robust and adaptable solutions.",
   },
   {
-    name: "logo.svg",
-    body: "Scalable Vector Graphics is an Extensible Markup Language-based vector image format for two-dimensional graphics with support for interactivity and animation.",
+    name: "Strategic Problem Solving",
+    body: "I dissect complex challenges into manageable parts, applying critical thinking to devise effective and innovative solutions.",
   },
   {
-    name: "keys.gpg",
-    body: "GPG keys are used to encrypt and decrypt email, files, directories, and whole disk partitions and to authenticate messages.",
+    name: "Clean Code Principles",
+    body: "I commit to writing maintainable, scalable, and efficient code, building a solid foundation for future growth and collaboration.",
   },
   {
-    name: "seed.txt",
-    body: "A seed phrase, seed recovery phrase or backup seed phrase is a list of words which store all the information needed to recover Bitcoin funds on-chain.",
+    name: "Data-Driven Decisions",
+    body: "Leveraging analytics and insights, I inform design and development choices to optimize performance and achieve measurable results.",
   },
 ];
 
 const features = [
   {
-    Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
+    Icon: PuzzleIcon,
+    name: "My Process",
+    description: "Unveiling the strategic thinking behind impactful solutions.",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
@@ -46,7 +49,7 @@ const features = [
         pauseOnHover
         className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
       >
-        {files.map((f, idx) => (
+        {approaches.map((f, idx) => (
           <figure
             key={idx}
             className={cn(
@@ -70,9 +73,10 @@ const features = [
     ),
   },
   {
-    Icon: BellIcon,
-    name: "Notifications",
-    description: "Get notified when something happens.",
+    Icon: HandshakeIcon,
+    name: "Catalyst for Collaboration",
+    description:
+      "Fostering synergy and effective communication to drive shared success.",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
@@ -81,9 +85,9 @@ const features = [
     ),
   },
   {
-    Icon: Share2Icon,
-    name: "Integrations",
-    description: "Supports 100+ integrations and counting.",
+    Icon: Laptop2Icon,
+    name: "My Stack",
+    description: "The robust technologies powering my solutions.",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
@@ -92,9 +96,10 @@ const features = [
     ),
   },
   {
-    Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
+    Icon: ClockIcon,
+    name: "Global Synchronicity",
+    description:
+      "Mastering diverse timelines to deliver on schedule, anywhere.",
     className: "col-span-3 lg:col-span-1",
     href: "#",
     cta: "Learn more",
