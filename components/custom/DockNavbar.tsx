@@ -65,7 +65,7 @@ const Icons = {
 const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/projects", icon: PencilIcon, label: "Projects" },
+    { href: "#projects", icon: PencilIcon, label: "Projects" },
   ],
   contact: {
     social: {
@@ -95,7 +95,7 @@ const DATA = {
 
 export function DockNavbar() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center max-sm:hidden fixed z-50 top-0 left-1/2 -translate-x-1/2">
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.navbar.map((item) => (

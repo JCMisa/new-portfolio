@@ -123,7 +123,7 @@ export function OverviewSection() {
         </h1>
         <TypingAnimation
           startOnView={true}
-          className="text-lg lg:text-xl text-muted-foreground"
+          className="text-lg lg:text-xl text-muted-foreground text-center"
         >
           Unveiling My Approach, Skills, and Proven Value
         </TypingAnimation>
