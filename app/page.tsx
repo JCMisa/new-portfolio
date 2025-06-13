@@ -1,9 +1,9 @@
 import { DockNavbar } from "@/components/custom/DockNavbar";
-import EasterEgg from "@/components/custom/EasterEgg";
 import Hero from "@/components/custom/Hero";
 import { OverviewSection } from "@/components/custom/OverviewSection";
 import ProjectsSection from "../components/custom/ProjectsSection";
 import GoUp from "@/components/custom/GoUp";
+import CertificatesSection from "@/components/custom/CertificatesSection";
 
 export default function Home() {
   return (
@@ -11,9 +11,11 @@ export default function Home() {
       <DockNavbar />
       <Hero />
       <OverviewSection />
-      <ProjectsSection />
+      <div className="mt-20 lg:mt-52">
+        <ProjectsSection />
+        <CertificatesSection />
+      </div>
       <GoUp />
-      <EasterEgg />
     </div>
   );
 }

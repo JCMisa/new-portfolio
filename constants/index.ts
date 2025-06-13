@@ -452,3 +452,126 @@ export const projects: ProjectType[] = [
     github: "https://github.com/JCMisa/spotify-clone-misa",
   },
 ];
+
+export const certificates = [
+  {
+    id: 1,
+    img: "https://i.ibb.co/ccLY73Vp/Great-Stack-Certificate.png",
+    title: "Great-Stack-Certificate",
+  },
+  {
+    id: 2,
+    img: "https://i.ibb.co/3yLb5v19/ethical-hacker-badge-img-misa.png",
+    title: "ethical-hacker-badge-img-misa",
+  },
+  {
+    id: 3,
+    img: "https://i.ibb.co/B5c6ZP8b/etichal-hacker-cert.jpg",
+    title: "ethical-hacker-cert",
+  },
+  {
+    id: 4,
+    img: "https://i.ibb.co/Q3NX3mRB/Data-Analytics-Cerificate.jpg",
+    title: "Data-Analytics-Certificate",
+  },
+  {
+    id: 5,
+    img: "https://i.ibb.co/C3pqh5rW/user-experience-design-fundamentals-badge-img-misa.png",
+    title: "user-experience-design-fundamentals-badge",
+  },
+  {
+    id: 6,
+    img: "https://i.ibb.co/DHFK56VK/ux-design-cert.jpg",
+    title: "ux-design-cert",
+  },
+  {
+    id: 7,
+    img: "https://i.ibb.co/21p07xRX/networking-devices-and-initial-configuration-badge-img-misa.png",
+    title: "networking-devices-and-initial-configuration-badge",
+  },
+  {
+    id: 8,
+    img: "https://i.ibb.co/XdVyVY0/net-device-cert.jpg",
+    title: "net-device-cert",
+  },
+  {
+    id: 9,
+    img: "https://i.ibb.co/pvZ850CY/misa-project-management-fundamentals-badge-img.png",
+    title: "project-management-fundamentals-badge",
+  },
+  {
+    id: 10,
+    img: "https://i.ibb.co/TqkbYfYk/intro-to-llm-cert.jpg",
+    title: "intro-to-llm-cert",
+  },
+  {
+    id: 11,
+    img: "https://i.ibb.co/TBYTk0wm/intro-to-data-analytics-cert.jpg",
+    title: "intro-to-data-analytics-cert",
+  },
+  {
+    id: 12,
+    img: "https://i.ibb.co/fYCNf3L5/intro-to-cloud-computing-cert.jpg",
+    title: "intro-to-cloud-computing-cert",
+  },
+  {
+    id: 13,
+    img: "https://i.ibb.co/XZLDJJkK/business-analytics-with-excel-cert.jpg",
+    title: "business-analytics-with-excel-cert",
+  },
+  {
+    id: 14,
+    img: "https://i.ibb.co/239xr2rN/misa-badge-img-web-development-fundamentals.png",
+    title: "web-development-fundamentals-badge",
+  },
+  {
+    id: 15,
+    img: "https://i.ibb.co/Lh627gpT/web-test-and-deployment-cert.jpg",
+    title: "web-test-and-deployment-cert",
+  },
+  {
+    id: 16,
+    img: "https://i.ibb.co/s9n6H3DW/web-dev-basics-cert.jpg",
+    title: "web-dev-basics-cert",
+  },
+  {
+    id: 17,
+    img: "https://i.ibb.co/602W8YYF/web-dev-fundamentals-cert.jpg",
+    title: "web-dev-fundamentals-cert",
+  },
+  {
+    id: 18,
+    img: "https://i.ibb.co/C4jrCNP/proj-mngmnt-fundamentals-cert.jpg",
+    title: "project-management-fundamentals-cert",
+  },
+  {
+    id: 19,
+    img: "https://i.ibb.co/23Kx2b7T/intro-to-html-css-cert.jpg",
+    title: "intro-to-html-css-cert",
+  },
+  {
+    id: 20,
+    img: "https://i.ibb.co/KxdM4Jpt/developing-sites-for-the-web-cert.jpg",
+    title: "developing-sites-for-the-web-cert",
+  },
+  {
+    id: 21,
+    img: "https://i.ibb.co/0pQG6g5k/bringing-websites-to-life-with-js-cert.jpg",
+    title: "bringing-websites-to-life-with-js-cert",
+  },
+  {
+    id: 22,
+    img: "https://i.ibb.co/cSYrBPZd/javascript-essentials-1-badge-img-misa.png",
+    title: "javascript-essentials-1-badge",
+  },
+  {
+    id: 23,
+    img: "https://i.ibb.co/Myp0sWCy/js-essentials-1-cert.jpg",
+    title: "js-essentials-1-cert",
+  },
+  {
+    id: 24,
+    img: "https://i.ibb.co/ccLY73Vp/Great-Stack-Certificate.png",
+    title: "Great-Stack-Certificate",
+  },
+];
