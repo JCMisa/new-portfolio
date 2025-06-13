@@ -12,7 +12,9 @@ import { projects } from "@/constants";
 import { ProjectCard } from "./ProjectCard";
 import Image from "next/image";
 
-const higherHeight = [1, 8, 17, 10, 3, 19, 11, 20, 4, 21, 13];
+const higherHeight = [
+  9, 1, 17, 11, 3, 13, 5, 15, 23, 25, 27, 19, 7, 29, 31, 21,
+];
 
 export function ProjectsGallery() {
   return (
@@ -22,18 +24,23 @@ export function ProjectsGallery() {
           <BlurFade key={proj.id} delay={0.25 + idx * 0.05} inView>
             <Dialog>
               <DialogTrigger>
-                <Image
-                  src={proj.img || "/empty-img.png"}
-                  alt={`Project Image ${idx + 1}`}
-                  width={500}
-                  height={500}
-                  className={`mb-4 size-full rounded-lg object-cover cursor-pointer hover:scale-105 transition-all ${
-                    higherHeight.includes(idx) ? "h-96" : "h-64"
-                  }`}
-                  priority={idx < 2}
-                  quality={85}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+                <div className="relative">
+                  <span className="absolute top-3 left-3 text-primary">
+                    {idx}
+                  </span>
+                  <Image
+                    src={proj.img || "/empty-img.png"}
+                    alt={`Project Image ${idx + 1}`}
+                    width={500}
+                    height={500}
+                    className={`mb-4 size-full rounded-lg object-cover cursor-pointer hover:scale-105 transition-all ${
+                      higherHeight.includes(idx) ? "h-96" : "h-64"
+                    }`}
+                    priority={idx < 2}
+                    quality={85}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
               </DialogTrigger>
               <DialogContent className="bg-transparent border border-none">
                 <DialogHeader>

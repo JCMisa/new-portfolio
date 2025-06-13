@@ -2,24 +2,98 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 
+// reviews from linkedin and other social media apps
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    id: 1,
+    name: "Creds",
+    username: "@personal-portfolio1",
+    body: "Great achievement John carlo Misa! You have hit a great milestone! Keep aiming for the highest and reaching for the stars! We are here to applaud your extraordinary efforts and celebrate with you! 🥳🥳🥳",
     img: "https://avatar.vercel.sh/jack",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
+    id: 2,
+    name: "GreatStack 🎓",
+    username: "@netflix-clone1",
+    body: "Awesome job! John 👏 Loved it. Keep up the great work.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    id: 3,
+    name: "Krishna",
+    username: "@netflix-clone2",
+    body: "Like it 👏👏",
     img: "https://avatar.vercel.sh/john",
+  },
+  {
+    id: 4,
+    name: "Soumya",
+    username: "@netflix-clone3",
+    body: "Nice work 👍",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    id: 5,
+    name: "GreatStack 🎓",
+    username: "@dictionairy1",
+    body: "Congratulations on launching dictionAIry John Carlo Misa! Excited to see how dictionAIry evolves! 🚀",
+    img: "https://avatar.vercel.sh/jill",
+  },
+  {
+    id: 6,
+    name: "Malavika",
+    username: "@dictionairy2",
+    body: "Have you tried integrating different APIs into your projects, and what challenges did you face?",
+    img: "https://avatar.vercel.sh/john",
+  },
+  {
+    id: 7,
+    name: "JavaScript Mastery",
+    username: "@curatech1",
+    body: "Well done, John! Glad you enjoyed the tutorial! 🔥",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    id: 8,
+    name: "JavaScript Mastery",
+    username: "@applceclone1",
+    body: "Amazing work! Well done, John - thanks for recommending us 🙌",
+    img: "https://avatar.vercel.sh/jill",
+  },
+  {
+    id: 9,
+    name: "JavaScript Mastery",
+    username: "@animated-portfolio1",
+    body: "Well done, John! 🔥",
+    img: "https://avatar.vercel.sh/john",
+  },
+  {
+    id: 10,
+    name: "JavaScript Mastery",
+    username: "@aora1",
+    body: "Well done! 🔥",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    id: 11,
+    name: "JavaScript Mastery",
+    username: "@ignite1",
+    body: "Well done for completing this project! 🔥",
+    img: "https://avatar.vercel.sh/jill",
+  },
+  {
+    id: 12,
+    name: "Jaffer",
+    username: "@techtrail1",
+    body: "The concept of personalized learning powered by AI is truly revolutionary, especially with the ability to generate custom reviewers for students.",
+    img: "https://avatar.vercel.sh/john",
+  },
+  {
+    id: 13,
+    name: "Jaffer",
+    username: "@techtrail2",
+    body: "John Carlo Misa Great insights, ! The prompt engineering techniques you're using with the Gemini AI model are really solid for ensuring the content is both relevant and tailored.",
+    img: "https://avatar.vercel.sh/jack",
   },
 ];
 
@@ -66,7 +140,7 @@ export function ProjectsOverview() {
     <div className="relative flex h-[50rem] w-full flex-row items-center justify-center overflow-hidden">
       <Marquee pauseOnHover vertical className="[--duration:20s]">
         {firstRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
+          <ReviewCard key={review.id} {...review} />
         ))}
       </Marquee>
       <Marquee reverse pauseOnHover vertical className="[--duration:20s]">

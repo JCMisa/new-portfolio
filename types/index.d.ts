@@ -2,8 +2,8 @@ declare interface ProjectType {
   id: number;
   title: string;
   des: string;
-  img: string;
+  img?: string;
   iconLists: string[];
-  github: string;
-  live: string;
+  github?: string;
+  live?: string;
 }

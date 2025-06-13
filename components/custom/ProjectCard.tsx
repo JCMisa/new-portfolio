@@ -57,16 +57,29 @@ export function ProjectCard({
         <CardDescription>{project.des}</CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Button asChild>
-          <Link href={project.github} target="_blank">
+        {project?.github ? (
+          <Button asChild>
+            <Link href={project.github} target="_blank">
+              Github Link
+            </Link>
+          </Button>
+        ) : (
+          <Button className="line-through" disabled>
             Github Link
-          </Link>
-        </Button>
-        <Button variant="secondary" asChild>
-          <Link href={project.live} target="_blank">
+          </Button>
+        )}
+
+        {project?.live ? (
+          <Button variant="secondary" asChild>
+            <Link href={project.live} target="_blank">
+              View Live
+            </Link>
+          </Button>
+        ) : (
+          <Button variant="secondary" className="line-through" disabled>
             View Live
-          </Link>
-        </Button>
+          </Button>
+        )}
       </CardFooter>
     </Card>
   );
