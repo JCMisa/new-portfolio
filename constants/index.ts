@@ -434,3 +434,44 @@ export const certificates = [
     title: "Great-Stack-Certificate",
   },
 ];
+
+export const approaches = [
+  {
+    name: "User-Centered Design",
+    body: "I prioritize understanding user needs and behaviors to craft intuitive, engaging experiences that genuinely solve problems.",
+  },
+  {
+    name: "Iterative Development",
+    body: "My process involves continuous cycles of feedback, refinement, and testing, ensuring robust and adaptable solutions.",
+  },
+  {
+    name: "Strategic Problem Solving",
+    body: "I dissect complex challenges into manageable parts, applying critical thinking to devise effective and innovative solutions.",
+  },
+  {
+    name: "Clean Code Principles",
+    body: "I commit to writing maintainable, scalable, and efficient code, building a solid foundation for future growth and collaboration.",
+  },
+  {
+    name: "Data-Driven Decisions",
+    body: "Leveraging analytics and insights, I inform design and development choices to optimize performance and achieve measurable results.",
+  },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/github.svg",
+    link: "https://github.com/JCMisa",
+  },
+  {
+    id: 2,
+    img: "/facebook.svg",
+    link: "https://www.facebook.com/johncarlomisa26/",
+  },
+  {
+    id: 3,
+    img: "/linkedin.svg",
+    link: "https://www.linkedin.com/in/john-carlo-misa-80a1b5208/",
+  },
+];

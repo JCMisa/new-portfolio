@@ -5,7 +5,7 @@ import { VelocityScroll } from "../magicui/scroll-based-velocity";
 
 const CertificatesSection = () => {
   return (
-    <section className="my-10 space-y-4">
+    <section className="my-10 space-y-4 bg-transparent">
       {/* <div className="flex flex-col items-center justify-self-end perspective-1000">
         <h1 className="text-6xl font-bold text-center scale-110 translate-x-[-20px] translate-z-[-50px] rotate-y-[-10deg]">
           Certifications <span className="text-primary">&</span> Achievements

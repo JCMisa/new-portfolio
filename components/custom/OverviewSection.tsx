@@ -12,29 +12,7 @@ import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Marquee } from "../magicui/marquee";
 import { TypingAnimation } from "../magicui/typing-animation";
 import { Globe } from "../magicui/globe";
-
-const approaches = [
-  {
-    name: "User-Centered Design",
-    body: "I prioritize understanding user needs and behaviors to craft intuitive, engaging experiences that genuinely solve problems.",
-  },
-  {
-    name: "Iterative Development",
-    body: "My process involves continuous cycles of feedback, refinement, and testing, ensuring robust and adaptable solutions.",
-  },
-  {
-    name: "Strategic Problem Solving",
-    body: "I dissect complex challenges into manageable parts, applying critical thinking to devise effective and innovative solutions.",
-  },
-  {
-    name: "Clean Code Principles",
-    body: "I commit to writing maintainable, scalable, and efficient code, building a solid foundation for future growth and collaboration.",
-  },
-  {
-    name: "Data-Driven Decisions",
-    body: "Leveraging analytics and insights, I inform design and development choices to optimize performance and achieve measurable results.",
-  },
-];
+import { approaches } from "@/constants";
 
 const features = [
   {

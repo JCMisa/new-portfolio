@@ -4,6 +4,7 @@ import { OverviewSection } from "@/components/custom/OverviewSection";
 import ProjectsSection from "../components/custom/ProjectsSection";
 import GoUp from "@/components/custom/GoUp";
 import CertificatesSection from "@/components/custom/CertificatesSection";
+import ContactSection from "@/components/custom/ContactSection";
 
 export default function Home() {
   return (
@@ -11,10 +12,11 @@ export default function Home() {
       <DockNavbar />
       <Hero />
       <OverviewSection />
-      <div className="mt-20 lg:mt-52">
+      <div className="my-20 lg:mt-52">
         <ProjectsSection />
         <CertificatesSection />
       </div>
+      <ContactSection />
       <GoUp />
     </div>
   );
