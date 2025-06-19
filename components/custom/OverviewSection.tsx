@@ -96,7 +96,7 @@ export function OverviewSection() {
   return (
     <section className="my-10 space-y-4">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-6xl font-bold text-center">
           The <span className="text-primary">Core</span>
         </h1>
         <TypingAnimation

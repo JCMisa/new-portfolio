@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   return (
     <section className="my-10 space-y-4" id="projects">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-6xl font-bold text-center">
           My <span className="text-primary">Work</span>
         </h1>
         <TypingAnimation
@@ -15,7 +15,7 @@ const ProjectsSection = () => {
         >
           Transforming complex ideas into impactful digital realities.
         </TypingAnimation>
-        <span className="text-xs text-primary font-semibold">
+        <span className="text-xs text-primary font-semibold text-center">
           Click the project image to see details.
         </span>
       </div>

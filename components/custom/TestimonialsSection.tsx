@@ -45,7 +45,7 @@ export function TestimonialsSection() {
   return (
     <section className="w-full mt-20">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-2xl md:text-6xl font-bold text-center">
           Collaborator <span className="text-primary">Spotlights</span>
         </h1>
         <TypingAnimation

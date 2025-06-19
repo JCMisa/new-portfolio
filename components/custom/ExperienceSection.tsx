@@ -9,7 +9,7 @@ const ExperienceSection = () => {
   return (
     <section className="mt-20 w-full">
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-2xl md:text-6xl font-bold text-center">
           My <span className="text-primary">Work</span> &{" "}
           <span className="text-primary">Contributions</span>
         </h1>
@@ -20,7 +20,7 @@ const ExperienceSection = () => {
           Exploring significant projects and experiences from my academic
           journey, freelance endeavors, and commissioned assignments.
         </TypingAnimation>
-        <span className="text-xs text-primary font-semibold">
+        <span className="text-xs text-primary font-semibold text-center">
           Scratch to reveal.
         </span>
       </div>

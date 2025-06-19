@@ -22,7 +22,10 @@ const ResumeButton = () => {
     <>
       <audio ref={audioRef} src="/glitch-sound.mp3" preload="auto" />
       <button
-        className="resume-btn cursor-pointer"
+        className="resume-btn cursor-pointer px-6 py-3 text-lg rounded-lg font-semibold transition-all duration-200
+          md:px-8 md:py-4 md:text-xl
+          sm:px-5 sm:py-2.5 sm:text-base
+          xs:px-4 xs:py-2 xs:text-sm"
         onClick={() => {
           setHasInteracted(true);
           setIsResumeOpen(true);
