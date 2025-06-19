@@ -7,3 +7,11 @@ declare interface ProjectType {
   github?: string;
   live?: string;
 }
+
+declare interface WorkExperienceType {
+  id: number;
+  title: string;
+  desc: string;
+  className: string;
+  thumbnail: string;
+}

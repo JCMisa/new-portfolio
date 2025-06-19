@@ -15,6 +15,9 @@ const ProjectsSection = () => {
         >
           Transforming complex ideas into impactful digital realities.
         </TypingAnimation>
+        <span className="text-xs text-primary font-semibold">
+          Click the project image to see details.
+        </span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10 relative">

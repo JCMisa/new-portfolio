@@ -461,17 +461,87 @@ export const approaches = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/github.svg",
+    img: "https://i.ibb.co/tpdK0cD7/github.png",
     link: "https://github.com/JCMisa",
   },
   {
     id: 2,
-    img: "/facebook.svg",
+    img: "https://i.ibb.co/XrwYLhQ9/facebook.png",
     link: "https://www.facebook.com/johncarlomisa26/",
   },
   {
     id: 3,
-    img: "/linkedin.svg",
+    img: "https://i.ibb.co/67TqJq56/linkedin.png",
     link: "https://www.linkedin.com/in/john-carlo-misa-80a1b5208/",
+  },
+];
+
+export const reviews = [
+  {
+    name: "Jack",
+    username: "@jack",
+    body: "I've never seen anything like this before. It's amazing. I love it.",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "Jill",
+    username: "@jill",
+    body: "I don't know what to say. I'm speechless. This is amazing.",
+    img: "https://avatar.vercel.sh/jill",
+  },
+  {
+    name: "John",
+    username: "@john",
+    body: "I'm at a loss for words. This is amazing. I love it.",
+    img: "https://avatar.vercel.sh/john",
+  },
+  {
+    name: "Jane",
+    username: "@jane",
+    body: "I'm at a loss for words. This is amazing. I love it.",
+    img: "https://avatar.vercel.sh/jane",
+  },
+  {
+    name: "Jenny",
+    username: "@jenny",
+    body: "I'm at a loss for words. This is amazing. I love it.",
+    img: "https://avatar.vercel.sh/jenny",
+  },
+  {
+    name: "James",
+    username: "@james",
+    body: "I'm at a loss for words. This is amazing. I love it.",
+    img: "https://avatar.vercel.sh/james",
+  },
+];
+
+export const workExperience: WorkExperienceType[] = [
+  {
+    id: 1,
+    title: "Freelance AI & Commissioned Projects",
+    desc: "Worked on freelance and commissioned projects focused on AI, including developing solutions for prompt engineering and integrating AI-driven features into client applications.",
+    className: "md:col-span-2",
+    thumbnail: "https://i.ibb.co/7JnPKBSM/t-1.jpg",
+  },
+  {
+    id: 2,
+    title: "Full-Stack Dev in Progress",
+    desc: "Dedicated to continuous learning in web development, actively exploring and implementing new and in-demand tech stacks. This includes experience with NextJS, AWS, .NetCore.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "https://i.ibb.co/6cfjZyGv/t-2.jpg",
+  },
+  {
+    id: 3,
+    title: "Project Management & Finance Specialist",
+    desc: "Managed the commissioning process for web development projects, ensuring clear communication between clients and developers. Additionally, handled financial aspects like creating financial statements and balance sheets.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "https://i.ibb.co/8LC9BrbF/t-3.jpg",
+  },
+  {
+    id: 4,
+    title: "IT Challenge Enthusiast",
+    desc: "Participated in web development competitions like IT Olympics and other university events, honing my skills in problem-solving, coding under pressure, and teamwork in a competitive environment.",
+    className: "md:col-span-2",
+    thumbnail: "https://i.ibb.co/MD85gzN4/t-4.jpg",
   },
 ];

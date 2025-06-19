@@ -5,6 +5,8 @@ import ProjectsSection from "../components/custom/ProjectsSection";
 import GoUp from "@/components/custom/GoUp";
 import CertificatesSection from "@/components/custom/CertificatesSection";
 import ContactSection from "@/components/custom/ContactSection";
+import { TestimonialsSection } from "@/components/custom/TestimonialsSection";
+import ExperienceSection from "@/components/custom/ExperienceSection";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
         <ProjectsSection />
         <CertificatesSection />
       </div>
+      <ExperienceSection />
+      <TestimonialsSection />
       <ContactSection />
       <GoUp />
     </div>
