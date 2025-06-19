@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable @next/next/no-img-element */
 import { BlurFade } from "@/components/magicui/blur-fade";
 import {
@@ -11,16 +13,113 @@ import {
 import { projects } from "@/constants";
 import { ProjectCard } from "./ProjectCard";
 import Image from "next/image";
+import { useState, useMemo } from "react";
+import { Check, ChevronsUpDown } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+} from "@/components/ui/command";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { useDebounce } from "@/lib/hooks/use-debounce";
 
 const higherHeight = [
   9, 1, 17, 11, 3, 13, 5, 15, 23, 25, 27, 19, 7, 29, 31, 21,
 ];
 
 export function ProjectsGallery() {
+  const [open, setOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [searchValue, setSearchValue] = useState("");
+  const debouncedSearch = useDebounce(searchValue, 300); // 300ms debounce
+
+  // Get unique categories from all projects
+  const categories = useMemo(() => {
+    const categorySet = new Set<string>();
+    projects.forEach((project) => {
+      project.category.forEach((cat) => categorySet.add(cat));
+    });
+    return Array.from(categorySet).sort();
+  }, []);
+
+  // Filter projects based on selected category
+  const filteredProjects = useMemo(() => {
+    if (!selectedCategory) return projects;
+    return projects.filter((project) =>
+      project.category.includes(selectedCategory)
+    );
+  }, [selectedCategory]);
+
   return (
     <section id="photos">
+      <div className="my-6">
+        <Popover open={open} onOpenChange={setOpen}>
+          <PopoverTrigger asChild>
+            <Button
+              variant="outline"
+              role="combobox"
+              aria-expanded={open}
+              className="w-full justify-between"
+            >
+              {selectedCategory
+                ? selectedCategory
+                : "Select a category to filter..."}
+              <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent className="w-full p-0">
+            <Command>
+              <CommandInput
+                placeholder="Search categories..."
+                value={searchValue}
+                onValueChange={setSearchValue}
+              />
+              <CommandEmpty>No category found.</CommandEmpty>
+              <CommandGroup>
+                {categories
+                  .filter((category) =>
+                    category
+                      .toLowerCase()
+                      .includes(debouncedSearch.toLowerCase())
+                  )
+                  .map((category) => (
+                    <CommandItem
+                      key={category}
+                      value={category}
+                      onSelect={(currentValue) => {
+                        setSelectedCategory(
+                          currentValue === selectedCategory ? "" : currentValue
+                        );
+                        setOpen(false);
+                      }}
+                    >
+                      <Check
+                        className={cn(
+                          "mr-2 h-4 w-4",
+                          selectedCategory === category
+                            ? "opacity-100"
+                            : "opacity-0"
+                        )}
+                      />
+                      {category}
+                    </CommandItem>
+                  ))}
+              </CommandGroup>
+            </Command>
+          </PopoverContent>
+        </Popover>
+      </div>
+
       <div className="columns-2 gap-4 sm:columns-3">
-        {projects.map((proj: ProjectType, idx: number) => (
+        {filteredProjects.map((proj: ProjectType, idx: number) => (
           <BlurFade key={proj.id} delay={0.25 + idx * 0.05} inView>
             <Dialog>
               <DialogTrigger>

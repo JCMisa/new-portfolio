@@ -3,7 +3,7 @@ declare interface ProjectType {
   title: string;
   des: string;
   img?: string;
-  iconLists: string[];
+  category: string[];
   github?: string;
   live?: string;
 }
