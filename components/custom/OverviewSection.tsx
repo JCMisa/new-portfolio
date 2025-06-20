@@ -19,7 +19,7 @@ const features = [
     Icon: PuzzleIcon,
     name: "My Process",
     description: "Unveiling the strategic thinking behind impactful solutions.",
-    href: "#",
+    href: "/my-process",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (

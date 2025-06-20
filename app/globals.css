@@ -198,6 +198,16 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto; /* Disable smooth scroll for those who prefer it */
+  }
+}
+
 body {
   font-family: var(--font-bricolage);
 }
