@@ -310,6 +310,15 @@ export const projects: ProjectType[] = [
     category: ["Music Streaming", "Frontend Development", "Entertainment Tech"],
     github: "https://github.com/JCMisa/spotify-clone-misa",
   },
+  {
+    id: 33,
+    title:
+      "ReCap: Your All-in-One Solution for Screen Recording & Video Insights",
+    des: "Discover ReCap, a web-based solution that redefines screen recording and video organization. This platform allows users to easily capture their screen and audio, then upload, edit, and enhance videos with AI-generated summaries and state of the art transcripts. Featuring a modern stack including Next.js, Neon Database, and Bunny.net, ReCap combines ease of use with advanced security and smart functionalities.",
+    img: "https://i.ibb.co/mVXghZ8B/recap-img.jpg",
+    category: ["Productivity Tool", "Content Management", "SaaS"],
+    live: "https://recap-seven.vercel.app/",
+  },
 ];
 
 export const certificates = [
