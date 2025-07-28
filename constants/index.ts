@@ -319,6 +319,14 @@ export const projects: ProjectType[] = [
     category: ["Productivity Tool", "Content Management", "SaaS"],
     live: "https://recap-seven.vercel.app/",
   },
+  {
+    id: 34,
+    title: "Aidea: Your AI Doctor, Always Here for You",
+    des: "Experience the future of healthcare with Aidea, the revolutionary AI-powered doctor assistant that brings compassionate, human-like virtual checkups right to your fingertips. Aidea listens, understands, and responds with a natural voice, guiding you through diagnoses, providing personalized prescriptions and medication advice, and offering insightful health recommendations. After each session, receive a concise report of your virtual consultation, empowering you with clear and actionable health information. Get the care you need, when you need it, with Aidea your trusted health companion.",
+    img: "https://i.ibb.co/zVhrxsG0/Screenshot-28-7-2025-93329-localhost.jpg",
+    category: ["Healthcare Tech", "AI/ML", "Voice Technology", "SaaS"],
+    github: "https://github.com/JCMisa/aideia",
+  },
 ];
 
 export const certificates = [
