@@ -327,6 +327,14 @@ export const projects: ProjectType[] = [
     category: ["Healthcare Tech", "AI/ML", "Voice Technology", "SaaS"],
     github: "https://github.com/JCMisa/aideia",
   },
+  {
+    id: 35,
+    title: "ReUp: ATS Resume Analyzer",
+    des: "ReUp is a sharp ATS resume analyzer built with Next.js, TypeScript, Shadcn, Neon DB, Drizzle ORM, Clerk Auth, and Puter.js. Upload your resume to get an ATS score and snappy recommendations to boost your job application game. Powered by Puter.js’s cloud storage, KV database, and free premium model testing, it’s a dev’s dream for crafting AI-driven solutions. Big thanks to JSM Mastery for the tutorial that brought this to life!",
+    img: "https://i.postimg.cc/Ss39rnD8/0f9238d9-8388-4966-9107-7bdde71a23d3.jpg",
+    category: ["Career Tech", "AI/ML", "SaaS", "Web Development"],
+    live: "https://reup-kappa.vercel.app/",
+  },
 ];
 
 export const certificates = [
